@@ -20,14 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 `include "defines.sv"
-`include "baudRateGenerator.sv"
+//`include "baudRateGenerator.sv"
 `ifdef UART_TX_ONLY
-`include "uart_tx_controller.sv"
+//`include "uart_tx_controller.sv"
 `elsif UART_RX_ONLY
-`include "uart_rx_controller.sv"
+//`include "uart_rx_controller.sv"
 `else
-`include "uart_tx_controller.sv"
-`include "uart_rx_controller.sv"
+//`include "uart_tx_controller.sv"
+//`include "uart_rx_controller.sv"
 `endif
 
 
