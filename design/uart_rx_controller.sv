@@ -54,8 +54,8 @@ module uart_rx_controller #(parameter RX_OVERSAMPLE = 0)
 					r_bit_index <= 0;
 					r_clk_count <= 0;
 					r_rx_done <= 0;
-					if (i_rx_data == 0) r_state <= RX_IDLE;
-					else r_state <= RX_START;
+					if (i_rx_data == 0) r_state <= RX_START;
+					else r_state <= RX_IDLE;
 				end
 				
 				RX_START: begin
