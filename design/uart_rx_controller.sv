@@ -69,7 +69,7 @@ module uart_rx_controller #(parameter RX_OVERSAMPLE = 0)
 						end
 					end
 					else begin
-						r_state <= RX_IDLE;
+						r_state <= RX_START;
 						r_clk_count <= r_clk_count + 1;
 					end
 				end
